@@ -8,7 +8,7 @@ import google.generativeai as genai
 # GOOGLE_API_KEY= genai.configure(api_key=os.environ('<your api code>')) #input your api code
 # genai.configure(api_key=GOOGLE_API_KEY)
 
-computer = random.randint(0,1)
+
 print('''
     This game is initial version made by Nirvik Nepal
                     version :1.0.0
@@ -19,6 +19,7 @@ print('''
 
 try :
     for i in range(1,1000) :
+        computer = random.randint(0,1)
         you = input("Enter Truth or Dare [Exit for exiting game and \"Your turn\" so that computer play] : ")
         if you.lower() == "truth" :
             truth_choice = random.randint(1,100)
