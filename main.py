@@ -44,7 +44,7 @@ try :
                 model = genai.GenerativeModel('gemini-1.5-flash')
                 response = model.generate_content(comp_dare)
                 print(response.text)
-        elif you.lower == "exit" :
+        elif you.lower() == "exit" :
             exit()
         else :
             print("Invalid input !!!.\n\nChoose between Truth and Dare or \"Your turn\" for computer to play or Exit to exit the game.")
