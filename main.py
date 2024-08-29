@@ -39,7 +39,7 @@ try :
                 response = model.generate_content(comp_truth_question)
                 print(response.text)
             else :
-                print("Computer choosed dare :")
+                print("Computer choosed : dare ")
                 comp_dare = input("Enter the task : ")
                 model = genai.GenerativeModel('gemini-1.5-flash')
                 response = model.generate_content(comp_dare)
